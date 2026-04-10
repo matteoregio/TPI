@@ -27,7 +27,7 @@ try:
         messaggio = data.decode('utf-8')
 
         # Controlla se è il messaggio di fine quiz
-        if messaggio.startswith("FINE"):
+        if not messaggio.startswith("["):
             print(f"\n{messaggio}\n")
             break
 
@@ -44,8 +44,9 @@ try:
         feedback = client.recv(1024).decode('utf-8')
         print(f"   {feedback}")
 
+except KeyboardInterrupt:
+    print("\n\n[!] Quiz interrotto dall'utente.")
 finally:
     # FASE 7: Chiudi connessione
     client.close()
-    print("[7] Connessione chiusa. Ciao!\n")
- 
+    print("[7] Connessione chiusa. Arrivederci!\n")
