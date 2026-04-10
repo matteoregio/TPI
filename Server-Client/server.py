@@ -66,7 +66,7 @@ try:
             print(f"[>] Feedback inviato: {feedback}")
 
         # FASE 6: Invia risultato finale
-        risultato = f"Quiz terminato! Hai totalizzato {punteggio}/{totale} risposte corrette."
+        risultato = f"FINE!! Quiz terminato! Hai totalizzato {punteggio}/{totale} risposte corrette."
         client_socket.sendall(risultato.encode('utf-8'))
         print(f"\n[FINE] Risultato inviato: {risultato}")
 
