@@ -55,7 +55,7 @@ try:
             print(f"[<] Risposta ricevuta: '{risposta_client}'")
 
             # Valuta la risposta
-            if risposta_client == item['risposta']:
+            if risposta_client == item['risposta'].lower():
                 punteggio += 1
                 feedback = "Corretto!"
             else:
