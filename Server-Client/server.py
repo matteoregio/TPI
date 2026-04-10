@@ -13,7 +13,7 @@ domande = [
     {"domanda": "Quale squadra ha vinto più titoli costruttori?", "risposta": "ferrari"},
     {"domanda": "Qual'è il pilota con più vittorie in carriera", "risposta": "lewis hamilton"},
     {"domanda": "Quale pilota ha battuto Hamilton nel 2021?", "risposta": "max verstappen"},
-    {"domanda": "Come si chiama il sistema di recupero di energia nelle monoposto?", "risposta": "ERS"},
+    {"domanda": "Come si chiama il sistema di recupero di energia nelle monoposto?", "risposta": "ers"},
     {"domanda": "Quale circuito è il più veloce nel calendario?", "risposta": "circuito di monza"},
     {"domanda": "Qual'è il colore della gomma più morbida?", "risposta": "rossa"},
 ]
@@ -66,7 +66,7 @@ try:
             print(f"[>] Feedback inviato: {feedback}")
 
         # FASE 6: Invia risultato finale
-        risultato = f"FINE!! Quiz terminato! Hai totalizzato {punteggio}/{totale} risposte corrette."
+        risultato = f"Quiz terminato! Hai totalizzato {punteggio}/{totale} risposte corrette."
         client_socket.sendall(risultato.encode('utf-8'))
         print(f"\n[FINE] Risultato inviato: {risultato}")
 
