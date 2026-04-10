@@ -47,5 +47,5 @@ try:
 finally:
     # FASE 7: Chiudi connessione
     client.close()
-    print("[7] Connessione chiusa. Arrivederci!\n")
+    print("[7] Connessione chiusa. Ciao!\n")
  
