@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dacci un feedback</h1>
+
+    <form id="formUtente">
+        <label for="Nome">Nome:</label>
+        <input type="text" id="Nome" name="Nome">
+
+        <br><br>
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email">
+
+        <br><br>
+        <label for="Data">Data del feedback:</label>
+        <input type="date" id="Data" name="Data">
+
+        <br><br>
+        <label for="Ora">Ora del feeback:</label>
+        <input type="time" id="Ora" name="Ora">
+
+        <br><br>
+        <label for="Selezione">Richiesta:</label>
+        <select id="Selezione" name="Selezione">
+            <option value="richiesta">Richiesta</option>
+            <option value="domanda">Domanda</option>
+        </select>
+
+        <br><br>
+        <label for="Messagio">Messaggio:</label>
+        <textarea name="Messaggio" rows="10" cols="10"></textarea>
+        
+        <br><br>
+        <label for="Check">Iscriviti alla Newsletter</label>
+        <input type="checkbox" id="Check" name="Check">
+        
+        <br><br>
+
+        <button type="submit">Invia</button>
+    </form>
+
+    <p id="messaggio"></p>
+    
+</body>
+</html>
